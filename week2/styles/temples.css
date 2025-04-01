@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --primary-color: #b4d3c0;
+  --secondary-color: #aaa9a9;
+  --accent2-color: #1769c7;
+  --heading-font: "montserrat", serif;
+  --paragraph-font: "roboto", serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 900px;
+  justify-items: center;
+}
+#apagar {
+  border: 0px;
+  margin: 0px;
+  font-size: 30px;
+  background: none;
+  color: #be2d2d;
+  position: absolute;
+  right: 1rem;
+  display: none;
+}
+#burguer {
+  font-size: 1.5rem;
+  border: 0;
+  background: none;
+  color: #000;
+  position: absolute;
+  top: 0.1rem;
+  right: 0.5rem;
+}
+#burguer::before {
+  content: "☰";
+}
+
+img {
+  max-width: 350px;
+  max-height: 200px;
+  padding: 15px;
+}
+.nome {
+  font-family: var(--paragraph-font);
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 10px;
+  display: none;
+}
+
+.menu a {
+  text-decoration: none;
+  font-family: var(--heading-font);
+  color: var(--accent2-color);
+  font-size: 20px;
+}
+.hover:hover {
+  background-color: #747a81;
+}
+.home {
+  margin: 9px;
+  margin-bottom: 0px;
+}
+#titulo {
+  font-size: 25px;
+  padding: 5px;
+  background-color: var(--primary-color);
+  text-align: start;
+  color: #000;
+  padding-left: 20px;
+}
+footer {
+  background-color: var(--primary-color);
+  text-align: center;
+}
