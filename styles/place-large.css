@@ -42,11 +42,10 @@
   .logo-clima {
     position: absolute;
     top: 8px;
+    right: 90px;
     width: 70px;
   }
   .borda {
     display: none;
   }
-
-
 }
