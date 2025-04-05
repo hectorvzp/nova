@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --primary-color: #d39e0d;
+  --secondary-color: #019b1a;
+  --accent2-color: #1769c7;
+  --heading-font: "montserrat", serif;
+  --paragraph-font: "roboto", serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.foto {
+  width: 100%;
+  height: auto;
+}
+.brazil {
+  background-color: var(--primary-color);
+  height: 80px;
+  text-align: center;
+  font-family: var(--heading-font);
+  align-content: center;
+}
+.decoration {
+  width: 100%;
+  height: 10px;
+  background-color: var(--secondary-color);
+}
+.information {
+  justify-items: center
+}
+.information h2 {
+  font-family: var(--heading-font);
+  padding: 20px;
+}
+.information p {
+  padding: 8px;
+ 
+  font-family: var(--paragraph-font);
+}
+.clima {
+  justify-items: center;
+}
+
+.clima p {
+  padding: 10px;
+  font-family: var(--paragraph-font);
+}
+.clima h2 {
+  font-family: var(--heading-font);
+  padding: 20px;
+  border-bottom: 0;
+}
+.borda {
+  width: 100%;
+  background-color: var(--primary-color);
+  height: 2px;
+  margin: 0px;
+}
+
+footer {
+  padding: 10px;
+  background-color: var(--primary-color);
+  text-align: center;
+}
+.logo-clima{
+  width: 90px;
+  height: auto;
+  border: 0;
+}

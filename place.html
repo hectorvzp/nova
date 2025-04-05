@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Country Page">
+  <meta name="author" content="Hector Zambrano">
+  <title>Country Page</title>
+
+  <link rel="stylesheet" href="./styles/place-small.css">
+  <link rel="stylesheet" href="./styles/place-large.css">
+
+
+</head>
+
+<body>
+  <header>
+    <h1 class="brazil">Brazil</h1>
+    <div class="decoration"></div>
+  </header>
+  <div class="foto">
+    <picture class="vv">
+      <source srcset="images/brasil-large.webp" media="(min-width: 850px)">
+      <img class="foto" src="./images/brasil-small.webp" alt="Brazil">
+    </picture>
+    <div class="borda"></div>
+  </div>
+  <div class="information">
+    <h2>Data</h2>
+    <p><strong>Area:</strong> 8,514,215 sq km</p>
+    <p><strong>Population:</strong> 203.080.756</p>
+    <p><strong>Capital:</strong> Brasília</p>
+    <p> <strong>Languages:</strong> Português</p>
+    <p><strong>Currency:</strong> BRL</p>
+    <p> <strong> Time Zone:</strong> UTC-3</p>
+    <p><strong>Calling Code:</strong> +55</p>
+    <p><strong>Internet TLD:</strong> .br</p>
+  </div>
+  <div class="clima">
+    <h2>Weather</h2>
+    <img class="logo-clima" src="./images/reshot-icon-weather-8CKJB9YN7X.svg" alt="">
+    <p class="temperatura"><strong>Temperature: </strong></p>
+    <p><strong>Conditions: Partly Cloudy </strong></p>
+    <p class="vento"><strong>Wind: </strong></p>
+    <p class="wind"><strong>Wind Chill: </strong></p>
+  </div>
+  <footer>
+    <p> © <span id="mostrarAnoAtual"></span> ✈️ Hector Zambrano ✈️ Brazil</p>
+    <p>Last Modification <span id="lasti"></span></p>
+  </footer>
+  <script src="./scripts/place.js"></script>
+</body>
+
+</html>
