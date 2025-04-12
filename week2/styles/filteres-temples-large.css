@@ -28,7 +28,6 @@
 
   footer {
     font-size: 1.2rem;
-    margin-top: px;
   }
 }
 @media (min-width: 55rem) {
@@ -87,7 +86,6 @@
     font-size: 30px;
   }
   .card {
-    border: f 0.5px, black;
     box-shadow: 2px 7px 15px rgba(0, 0, 0, 0.3);
     width: 500px;
     justify-items: center;
