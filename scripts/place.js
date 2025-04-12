@@ -23,3 +23,4 @@ calculateWindChill = (vento, temperatura) => {
 if ((temperatura <= 10 || vento > 4, 8)) {
   document.querySelector(".wind").innerHTML += `${calculateWindChill(vento,temperatura)} °C`
 }
+
