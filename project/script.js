@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // DOM interaction example
   const cards = document.querySelectorAll(".card");
-  cards.forEach(card => {
+  cards.forEach((card) => {
     card.addEventListener("click", () => {
       alert(`You clicked on ${card.textContent}`);
     });
@@ -24,13 +24,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const languages = [
     { name: "Python", typed: "Dynamic" },
     { name: "Java", typed: "Static" },
-    { name: "JavaScript", typed: "Dynamic" }
+    { name: "JavaScript", typed: "Dynamic" },
   ];
 
   const dynamicLangs = languages
-    .filter(lang => lang.typed === "Dynamic")
-    .map(lang => `🧠 ${lang.name}`)
+    .filter((lang) => lang.typed === "Dynamic")
+    .map((lang) => `🧠 ${lang.name}`)
     .join(", ");
 
   console.log(`Dynamic languages include: ${dynamicLangs}`);
 });
+const ano = document.getElementById("mostrarAnoAtual");
+const anoAtual = new Date();
+ano.innerHTML = anoAtual.getFullYear();
+
+const last = document.getElementById("lasti");
+const oLastModif = new Date(document.lastModified);
+const resultado = oLastModif.toLocaleString();
+last.innerHTML = resultado;
