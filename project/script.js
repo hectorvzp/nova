@@ -23,17 +23,20 @@ document.addEventListener("DOMContentLoaded", () => {
   // Object + array + array method + template literal
   const languages = [
     { name: "Python", typed: "Dynamic" },
-    { name: "Java", typed: "Static" },
+    { name: "C++", typed: "Static" },
     { name: "JavaScript", typed: "Dynamic" },
   ];
 
-  const dynamicLangs = languages
-    .filter((lang) => lang.typed === "Dynamic")
-    .map((lang) => `🧠 ${lang.name}`)
-    .join(", ");
-
-  console.log(`Dynamic languages include: ${dynamicLangs}`);
+  const boton = document.querySelector(".lengu");
+  boton.addEventListener("click", (e) => {
+    const dynamicLangs = languages
+      .filter((lang) => lang.typed === "Dynamic")
+      .map((lang) => `🧠 ${lang.name}`)
+      .join(", ");
+    alert(`Dynamic languages include: ${dynamicLangs}`);
+  });
 });
+
 const ano = document.getElementById("mostrarAnoAtual");
 const anoAtual = new Date();
 ano.innerHTML = anoAtual.getFullYear();
