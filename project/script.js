@@ -1,0 +1,36 @@
+// Dynamic greeting with conditional branching
+document.addEventListener("DOMContentLoaded", () => {
+  const user = localStorage.getItem("username");
+
+  if (user) {
+    alert(`Welcome back, ${user}!`);
+  } else {
+    const name = prompt("What's your name?");
+    if (name) {
+      localStorage.setItem("username", name);
+      alert(`Nice to meet you, ${name}!`);
+    }
+  }
+
+  // DOM interaction example
+  const cards = document.querySelectorAll(".card");
+  cards.forEach(card => {
+    card.addEventListener("click", () => {
+      alert(`You clicked on ${card.textContent}`);
+    });
+  });
+
+  // Object + array + array method + template literal
+  const languages = [
+    { name: "Python", typed: "Dynamic" },
+    { name: "Java", typed: "Static" },
+    { name: "JavaScript", typed: "Dynamic" }
+  ];
+
+  const dynamicLangs = languages
+    .filter(lang => lang.typed === "Dynamic")
+    .map(lang => `🧠 ${lang.name}`)
+    .join(", ");
+
+  console.log(`Dynamic languages include: ${dynamicLangs}`);
+});
