@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Review Submitted</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./styles/form.css">
+
+</head>
+
+<body>
+  <header>
+    <h1>Thank You!</h1>
+  </header>
+
+  <main>
+    <p>Your product review has been successfully submitted.</p>
+    <p><strong>Total Reviews Submitted:</strong> <span id="reviewCount"></span></p>
+  </main>
+
+  <footer>
+    <p> © <span id="mostrarAnoAtual"></span> ✈️ Hector Zambrano ✈️ Brazil</p>
+    <p>Last Modification <span id="lasti"></span></p>
+  </footer>
+  <script>
+    const count = localStorage.getItem("reviewCount") || 0;
+    localStorage.setItem("reviewCount", parseInt(count) + 1);
+    document.getElementById("reviewCount").textContent = localStorage.getItem("reviewCount");
+  </script>
+</body>
+
+</html>

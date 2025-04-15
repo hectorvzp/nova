@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Product Review Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../styles/form.css">
+  <script defer src="./form.js"></script>
+</head>
+
+<body>
+  <header>
+
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form method="get" action="../review.html">
+      <fieldset>
+        <legend>Review a Product</legend>
+
+        <!-- Nome do produto -->
+        <label for="productName">Product Name*</label>
+        <select id="productName" name="productName" required>
+          <option value="" disabled selected>Select a product...</option>
+          <!-- Populado via JS -->
+        </select>
+
+        <!-- Classificação -->
+        <label>Overall Rating*</label>
+        <div class="stars">
+          <input type="radio" id="star1" name="rating" value="1" required>
+          <label for="star1">☆</label>
+          <input type="radio" id="star2" name="rating" value="2">
+          <label for="star2">☆</label>
+          <input type="radio" id="star3" name="rating" value="3">
+          <label for="star3">☆</label>
+          <input type="radio" id="star4" name="rating" value="4">
+          <label for="star4">☆</label>
+          <input type="radio" id="star5" name="rating" value="5">
+          <label for="star5">☆</label>
+        </div>
+
+        <!-- Data de instalação -->
+        <label for="installDate">Installation Date*</label>
+        <input type="date" id="installDate" name="installDate" required>
+
+        <!-- Recursos úteis -->
+        <fieldset>
+          <legend>Helpful Features</legend>
+          <label><input type="checkbox" id="durability" name="features" value="durability"> Durability</label>
+          <label><input type="checkbox" id="ease" name="features" value="ease-of-use"> Ease of Use</label>
+          <label><input type="checkbox" id="performance" name="features" value="performance"> Performance</label>
+        </fieldset>
+
+        <!-- Revisão escrita -->
+        <label for="review">Written Review</label>
+        <textarea id="review" name="review" rows="4"></textarea>
+
+        <!-- Nome de usuário -->
+        <label for="username">Your Name</label>
+        <input type="text" id="username" name="username">
+
+        <!-- Enviar -->
+        <input type="submit" value="Submit Review">
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <p> © <span id="mostrarAnoAtual"></span> ✈️ Hector Zambrano ✈️ Brazil</p>
+    <p>Last Modification <span id="lasti"></span></p>
+  </footer>
+</body>
+
+</html>
